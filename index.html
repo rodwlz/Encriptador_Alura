@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<head> <title>Alura Encriptador</title>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css"> </head>
+    <script type="text/javascript" src="script.js"></script>
+
+    <body>
+        
+        <nav> <div class="logotipo"><img class="logoimg" src="imagenes/logoalura.svg" alt="Logo Alura"> <nav>
+    
+    <div class="C0">
+        <div class="CN" id="C1"> 
+            <textarea class="input_box" id="input_text" placeholder="Inserte su texto aqui"></textarea>
+
+        </div>
+
+        <div class="CN" id="C2">
+
+            <div class="warning"> <img id="warning_img" src="imagenes/advertencia.png" alt="Instrucciones de uso">
+                <p id="warning_text">Solo mininusculas sin acentos</p> </div>
+
+                <div class="lista_botones">
+                    <button type="button" class="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+
+        <div class="CN" id="C3"> <img id="imagen_output" src="imagenes/Muñeco.svg" alt="No hay texto aun"> 
+            <h2 class="output_text" id="ph_text">Ningún mensaje fue encontrado</h2>
+            <textarea class="result" id="text_result" placeholder="Ingrese el texto que desees encriptar o desencriptar"></textarea>
+            <button type="button" id="copy_button" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+    
+</body>
+
+<footer>Autor: Rodrigo Zapata Gómez<br>https://github.com/rodwlz </footer>
+<html>
+
