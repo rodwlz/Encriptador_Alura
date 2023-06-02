@@ -33,9 +33,14 @@ function encriptar() {
   }
   
 
-function copiar() {
+  function copiar() {
     var contenido = document.getElementById("text_result").value;
-    navigator.clipboard.writeText(contenido);
-    alert("Texto Copiado!")
-}
+    navigator.clipboard.writeText(contenido)
+      .then(function() {
+        alert("Texto copiado al portapapeles.");
+      })
+      .catch(function(error) {
+        console.error("Error al copiar el texto: ", error);
+      });
+  }
       
